@@ -1,0 +1,54 @@
+.edit-project {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .edit-project h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .edit-project input,
+  .edit-project textarea,
+  .edit-project select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .edit-project textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .edit-project button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-project button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .edit-project {
+      width: 90%;
+    }
+  }
+  

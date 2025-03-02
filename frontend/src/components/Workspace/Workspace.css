@@ -1,0 +1,409 @@
+/* 
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .sidebar-project {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  .icon-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .edit-icon {
+    color: #f0eeea;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    color: #f4efef;
+    cursor: pointer;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+   */
+  /* Workspace Container */
+/* Workspace Main Container */
+/* ==============================
+   🌟 Workspace Page Styling 🌟
+   ============================== */
+
+/* 🎨 Main Workspace Container */
+/* === GENERAL STYLES === */
+/* ==============================
+   🌟 Workspace Page Styling 🌟
+   ============================== */
+   /* === WORKSPACE CONTAINER === */
+.workspace {
+  display: flex;
+  height: 100vh;
+  background: #f8f9fa;
+  overflow: hidden;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+  width: 260px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul .active {
+  background: #4a90e2;
+  color: white;
+}
+  .sidebar-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    /* justify-content: space-between;  */
+    gap: 8px; /* Space between icon, text, and button */
+    padding: 8px;
+  }
+  
+  .add-btn {
+    width: 24px; /* Adjust size */
+    height: 24px;
+    font-size: 14px;
+    padding: 0;
+    border-radius: 50%; /* Make it circular */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* font-size: 14px; */
+
+/* .add-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 16px; */
+  /* cursor: pointer;
+  transition: 0.3s ease;
+} */ 
+
+.add-btn {
+  width: 24px; /* Adjust size */
+  height: 24px;
+  font-size: 14px;
+  padding: 0;
+  border-radius: 50%; /* Make it circular */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.add-btn:hover {
+  background: #3578c9;
+}
+
+/* === MAIN CONTENT === */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* === KANBAN BOARD === */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-top: 15px;
+}
+
+.kanban-column {
+  background: #eef1f5;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 280px;
+  max-width: 320px;
+}
+
+.kanban-column h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.kanban-card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-card p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.task-meta,
+.task-label {
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin-top: 5px;
+}
+
+/* === POPUP MODALS === */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-content button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-content button:first-of-type {
+  background-color: #4caf50;
+  color: white;
+}
+
+.popup-content button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: red;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.upload-section input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.upload-section button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.upload-section button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease-in-out;
+}
+
+/* File List */
+.file-list {
+  list-style: none;
+  padding: 0;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.delete-icon {
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+
+/* Submission Success Message */
+.success-message {
+  display: flex;
+  align-items: center;
+  background: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  justify-content: center;
+  font-weight: bold;
+  animation: fadeOut 3s ease-in-out forwards;
+}
+
+.success-icon {
+  margin-right: 8px;
+}
+
+/* Fade Out Animation */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
