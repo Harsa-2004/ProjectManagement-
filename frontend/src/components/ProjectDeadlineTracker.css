@@ -1,0 +1,37 @@
+/* DeadlineTracker.css */
+
+/* React Calendar custom styles */
+.react-calendar {
+    border: none;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .react-calendar__tile {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 6px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* Highlight the deadline date with a vivid color */
+  .deadline-highlight {
+    background: #ff7043 !important;
+    color: #fff !important;
+    border-radius: 4px;
+  }
+  
+  /* Style for overdue project cards */
+  .overdue-card {
+    border: 2px solid red;
+  }
+  
