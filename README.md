@@ -23,12 +23,11 @@ Frontend: React, JavaScript, Bootstrap, Material UI
 
 Backend: Node.js, Express.js
 
-Database: MongoDB (for persistent project & task storage)
+Database: MongoDB (for persistent project & task storage and submission) 
 
 Authentication: JWT
 
 State Management: React Hooks
 
-Local Storage: Used for storing submissions temporarily
 
 
