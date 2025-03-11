@@ -25,7 +25,7 @@ Backend: Node.js, Express.js
 
 Database: MongoDB (for persistent project & task storage)
 
-Authentication: JWT & OAuth (Google, GitHub login support)
+Authentication: JWT
 
 State Management: React Hooks
 
