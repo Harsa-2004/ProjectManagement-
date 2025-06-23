@@ -10,7 +10,7 @@ import authRoutes from "./routes/auth.js";
 import projectRoutes from "./routes/projectRoutes.js";
 import messageRoute from "./routes/messageRoute.js";
 import taskroutes from "./routes/taskroutes.js";
-import submissionRoutes from "./routes/submissionRoutes.js"; // <-- NEW
+import submissionRoutes from "./routes/submissionRoutes.js"; 
 
 dotenv.config();
 
