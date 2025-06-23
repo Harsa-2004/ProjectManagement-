@@ -93,16 +93,16 @@ section p {
 /* Hero Section */
 .hero-section {
     background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
-    background-size: cover;      /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat;/* Prevents the image from repeating */
-    height: 100vh;               /* Sets the section height to 100% of the viewport height */
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;               
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;                /* Adjust text color for better visibility */
-    padding: 0 20px;             /* Adds horizontal padding */
+    color: white;                
+    padding: 0 20px;             
     box-sizing: border-box;
 }
 
