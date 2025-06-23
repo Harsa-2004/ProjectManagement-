@@ -1,6 +1,6 @@
 import express from "express";
 import bcrypt from 'bcryptjs';
-import { User, validate } from "../models/User.js"; // Fix import
+import { User, validate } from "../models/User.js"; 
 
 const router = express.Router();
 
@@ -25,4 +25,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-export default router; // ✅ Correct default export
+export default router; 
