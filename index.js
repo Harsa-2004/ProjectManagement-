@@ -41,7 +41,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", projectRoutes);
 app.use("/api/tasks", taskroutes);
-app.use("/api/messages",messageRoute); // Chat message handling route
+app.use("/api/messages",messageRoute);
 app.use("/api/submissions", submissionRoutes);
 
 
